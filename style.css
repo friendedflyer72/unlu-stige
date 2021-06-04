@@ -1,0 +1,652 @@
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #191034;
+            }
+            
+            .main-1 {
+                min-height: 45vh;
+            }
+            
+            .mentor-card-1 {
+                padding: 1vw 20vw 6vw 5vw;
+                width: 70vw;
+                background-color: #191034;
+            }
+            
+            .mentor-card-2 {
+                display: flex;
+                position: relative;
+                z-index: 2;
+            }
+            
+            .mentor-small-img {
+                display: none;
+            }
+            
+            .mentor-img {
+                position: relative;
+            }
+            
+            .mentor-img img {
+                width: 23vw;
+                height: 40vw;
+                object-fit: cover;
+                border-radius: 6px;
+            }
+            
+            .mentor-card_contentPresent__bP81j,
+            .mentor-card_videoTrailer___y1W4 {
+                position: absolute;
+            }
+            
+            .mentor-card_playOverlay__3-Yds {
+                position: absolute;
+                display: flex;
+                align-items: flex-end;
+                width: 20vw;
+                padding: 4%;
+                border-radius: 6px;
+                z-index: 1;
+            }
+            
+            .mentor-card_playOverlay__3-Yds button {
+                position: absolute;
+                left: 1.5vw;
+                bottom: 2vw;
+                width: 20vw;
+                height: 3vw;
+                background-color: hsla(0, 0%, 100%, .29);
+                color: #fff;
+                border: none;
+                border-radius: 9px;
+                font-family: sans-serif;
+                font-weight: 700;
+                font-size: 1.05vw;
+                padding: 0 1vw;
+                display: inline-flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .mentor-card_playOverlay__3-Yds button span svg {
+                height: 2.5vw;
+                fill: #fff;
+            }
+            
+            .mentor-card_playOverlay__3-Yds button span {
+                padding: .5vw 0;
+            }
+            
+            .mentor-details {
+                display: flex;
+                flex-direction: column;
+                padding-left: 3vw;
+                padding-bottom: 3vw;
+                padding-top: 0;
+                position: relative;
+            }
+            
+            .mentor-card_info {
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .mentor-card_title {
+                border-bottom: 1px solid rgba(240, 234, 255, .1);
+                padding: 2vw 0;
+            }
+            
+            .mentor-card_head1 {
+                display: flex;
+                width: 35vw;
+                justify-content: space-between;
+            }
+            
+            .mentor-card_head1 h2 {
+                margin-top: 0;
+                margin-bottom: 3px;
+                font-size: 2.2vw;
+                line-height: 1.2;
+                color: #fff;
+            }
+            
+            .mentor-card_head2 {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: .5vw;
+            }
+            
+            .mentor-card_head2 p {
+                margin-top: 0;
+                margin-bottom: 3px;
+                font-size: 1.2vw;
+                font-family: sans-serif;
+                line-height: 1.2;
+                color: #9e91c1;
+            }
+            
+            .mentor-card_description {
+                align-items: center;
+                width: 35vw;
+                line-height: 1.5;
+            }
+            
+            .mentor-card_description h4 {
+                margin: 1.5vw 0 .5vw;
+                font-size: 1.5vw;
+                color: #fff;
+            }
+            
+            .mentor-card_description p {
+                color: #9e91c1;
+                font-size: 1.25vw;
+                margin-top: 0!important;
+                font-family: sans-serif;
+            }
+            
+            .mentor-card_description .mentor-card_descBottom {
+                margin-top: 5vw;
+            }
+            
+            .mentor-card_description .mentor-card_descBottom p {
+                margin: 0;
+            }
+            
+            .mentor-card_credentials {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+            
+            .mentor-card_rating {
+                display: flex;
+                margin-top: 0;
+                align-items: center;
+            }
+            
+            .mentor-card_rating p {
+                font-size: 1.1vw!important;
+                align-items: center;
+                margin: auto!important;
+            }
+            
+            .mentor-card_rating div {
+                padding-left: 1vw;
+                margin: auto!important;
+            }
+            
+            .mentor-card_rating span {
+                margin-right: .3vw;
+            }
+            
+            .mentor-card_rating svg {
+                width: .8vw;
+            }
+            
+            .mentor-card_achievedStar__1X-C9 svg {
+                fill: #ffdc64;
+            }
+            
+            .mentor-card_linkShare__2qyE1 {
+                width: 35vw;
+                color: #fff;
+                background-color: hsla(0, 0%, 100%, .06);
+                display: flex;
+                justify-content: space-between;
+                border-radius: 10px;
+                padding: 5px 20px;
+                border: 1px solid hsla(0, 0%, 100%, .06);
+                position: absolute;
+                bottom: .5vw;
+            }
+            
+            .mentor-card_linkShare__2qyE1 p {
+                font-size: .85vw;
+                font-family: sans-serif;
+            }
+            
+            .mentor-card_linkShare__2qyE1 div {
+                border-left: 1px solid hsla(0, 0%, 100%, .06);
+                width: 8vw;
+                display: flex;
+                justify-content: space-between;
+                margin: auto 0;
+                padding-left: 2vw;
+            }
+            
+            .mentor-card_linkShare__2qyE1 div span {
+                margin: auto 0;
+            }
+            
+            .mentor-card_linkShare__2qyE1 div span svg {
+                height: 1vw;
+                fill: #fff;
+                opacity: .6;
+            }
+            
+            .mentor-card_credentials__3-WXV {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+            
+            .class_main__3A-B9 .class_buyCard__dA9MS {
+                position: absolute;
+            }
+            
+            .order-confirm-module_alertLightBox__1-qv0 {
+                position: fixed;
+                top: 1vw;
+                right: 4vw;
+                width: 100%;
+                height: 42vw;
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            
+            .order-confirm-module_alertModal__j2vl5 {
+                display: flex;
+                width: 25vw;
+                background-color: #241d4c;
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+            
+            .order-confirm-module_alertForm__3Zgwu {
+                width: 30vw;
+                flex-grow: 1;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .order-confirm-module_alertForm__3Zgwu .order-confirm-module_heading__raBVc {
+                justify-content: space-between;
+                margin: 30px 2vw;
+            }
+            
+            .order-confirm-module_alertForm__3Zgwu .order-confirm-module_heading__raBVc h2 {
+                color: #fff;
+                margin: 0;
+                font-size: 1.4vw;
+                line-height: 1;
+            }
+            
+            .order-confirm-module_alertForm__3Zgwu .order-confirm-module_heading__raBVc p {
+                color: #9e91c1;
+                font-family: sans-serif;
+                font-size: 1vw;
+            }
+            
+            .order-confirm-module_orderCard__27H7- {
+                padding: 1vw 0 2vw 2vw;
+                border-bottom: 1px solid rgba(158, 145, 193, .19);
+            }
+            
+            .order-confirm-module_orderCard__27H7- div {
+                display: flex;
+                padding: .5vw 0;
+            }
+            
+            .order-confirm-module_orderCard__27H7- div span {
+                padding: 0 5px 0 2px;
+            }
+            
+            .order-confirm-module_orderCard__27H7- div p {
+                color: #fff;
+                font-family: sans-serif;
+                font-size: .9vw;
+                margin: auto .5vw;
+            }
+            
+            .order-confirm-module_couponSection__3e_9R {
+                padding: 2vw 2vw 0;
+            }
+            
+            .order-confirm-module_couponSection__3e_9R .order-confirm-module_discount__3CC9D {
+                display: flex;
+                padding-bottom: 1vw;
+            }
+            
+            .order-confirm-module_couponSection__3e_9R .order-confirm-module_discount__3CC9D img,
+            .order-confirm-module_couponSection__3e_9R .order-confirm-module_discount__3CC9D svg {
+                height: 3vw;
+                width: 3vw;
+                margin: auto 0;
+            }
+            
+            .order-confirm-module_couponSection__3e_9R .order-confirm-module_discount__3CC9D p {
+                color: #fff;
+                font-size: 1vw;
+                font-family: sans-serif;
+                padding-bottom: .6vw;
+                padding-left: 1vw;
+                margin: auto 0;
+            }
+            
+            .order-confirm-module_alertFormFooter__xaPCZ {
+                line-height: 1.2;
+                width: 76%;
+                margin: 0 0 0 12%;
+                color: #9e91c1;
+            }
+            
+            .order-confirm-module_alertFormFooter__xaPCZ button {
+                margin: .5vw 0;
+                width: 20vw;
+            }
+            
+            .primary-button_button__3MAST {
+                height: 40px;
+                padding: 12px 2vw;
+                border: none;
+                line-height: 12px;
+                font-family: sans-serif;
+                font-size: 12px;
+                color: #fff;
+                border-radius: 6px;
+                background: linear-gradient( 180deg, #e68a59, #e32f9e);
+            }
+            
+            .primary-button_button__3MAST span {
+                text-decoration: line-through;
+                opacity: .8;
+                padding: 0 1vw 0 0;
+            }
+            
+            .order-confirm-module_alertFormFooter__xaPCZ button {
+                margin: .5vw 0;
+                width: 20vw;
+            }
+            
+            .primary-button_outlinedButton__3vTrN {
+                height: 40px;
+                border: 1px solid;
+                font-family: sans-serif;
+                font-size: 12px;
+                color: #fff;
+                background-color: transparent;
+                border-radius: 6px;
+                display: flex;
+                justify-content: center;
+            }
+            
+            .primary-button_outlinedButton__3vTrN span {
+                margin: auto 5px;
+            }
+            
+            .primary-button_outlinedButton__3vTrN span span {
+                opacity: .8;
+                padding: 0 1vw 0 0;
+                text-decoration: line-through!important;
+            }
+            
+            .primary-button_outlinedButton__3vTrN span {
+                margin: auto 5px;
+            }
+            /* Display none part */
+            
+            .mentor-card_credentials__small {
+                display: none;
+            }
+            
+            .mentor-card_info__rating_small {
+                display: none;
+            }
+            
+            .mentor-card_description__small {
+                color: #191034;
+                display: none;
+            }
+            
+            .mentor-card_head__small {
+                position: absolute;
+                visibility: hidden;
+            }
+            
+            .mentor-card_orderCard__small {
+                position: absolute;
+                visibility: hidden;
+                left: 0px;
+            }
+            
+            @media only screen and (max-width: 750px) {
+                .main-1 {
+                    height: auto;
+                    margin-top: 10px;
+                }
+                .mentor-card-1 {
+                    width: auto;
+                    padding: 0;
+                    margin-bottom: 0;
+                    flex-direction: column;
+                }
+                .mentor-img {
+                    display: none;
+                }
+                .mentor-small-img {
+                    display: flex;
+                    margin: auto;
+                }
+                .mentor-small-img img {
+                    width: 60vw;
+                    height: 80vw;
+                    border-radius: 10px;
+                }
+                .mentor-card_playOverlay-small {
+                    width: 80vw;
+                }
+                .mentor-card_playOverlay-small button {
+                    left: 2.5vw;
+                    bottom: -43vh;
+                    width: 55vw;
+                    height: 13vw;
+                    font-size: 4.25vw;
+                    padding: 0 3vw;
+                    position: absolute;
+                    background-color: hsla(0, 0%, 100%, .29);
+                    color: #fff;
+                    border: none;
+                    border-radius: 9px;
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    padding: 0 2vw;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .mentor-card_playOverlay-small button span svg {
+                    height: 8vw;
+                }
+                .mentor-card_info__small {
+                    text-align: center;
+                    flex-direction: column;
+                    height: unset;
+                    align-items: center;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .mentor-card_info__small h2 {
+                    font-size: 7vw;
+                    margin-top: 3vh;
+                    margin-bottom: 1vh;
+                    color: #fff;
+                }
+                .mentor-card_info__small p {
+                    font-size: 4vw;
+                    margin-top: 3vh;
+                    margin-bottom: 1vh;
+                    font-family: sans-serif;
+                    color: #9e91c1;
+                }
+                .mentor-card_head__small {
+                    position: relative;
+                    visibility: visible;
+                }
+                .mentor-card_orderCard__small {
+                    visibility: visible;
+                    position: relative;
+                    padding: 8vw 0 10vw 2vw;
+                    border-bottom: 1px solid rgba(158, 145, 193, .19);
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    width: 100vw;
+                    justify-content: center;
+                }
+                .mentor-card_orderCard__small div {
+                    display: flex;
+                    padding: .5vw 2vw;
+                }
+                .mentor-card_orderCard__small div span {
+                    padding: 0 5px 0 2px;
+                }
+                .mentor-card_orderCard__small div p {
+                    color: #fff;
+                    font-family: sans-serif;
+                    font-size: 3vw;
+                    margin: auto 2vw;
+                }
+                .mentor-card_credentials__small {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .mentor-card_info__rating_small {
+                    text-align: center;
+                    flex-direction: column;
+                    height: unset;
+                    align-items: center;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .mentor-card_head2__small {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-top: .5vw;
+                    flex-direction: column;
+                }
+                .mentor-card_head2__small p {
+                    font-size: 3.5vw;
+                    margin-top: 3vh;
+                    margin-bottom: 1vh;
+                    font-family: sans-serif;
+                    color: #9e91c1;
+                    line-height: 1.2;
+                }
+                .mentor-card_rating__small {
+                    padding-top: 0;
+                    display: flex;
+                    margin-top: 0;
+                    align-items: center;
+                }
+                .mentor-card_rating__small p {
+                    font-size: 4vw!important;
+                    align-items: center;
+                    margin: auto!important;
+                }
+                .mentor-card_rating__small div {
+                    padding-left: 4vw;
+                    margin: auto!important;
+                }
+                .mentor-card_rating__small span {
+                    padding-left: 1vw;
+                    margin-right: .3vw;
+                }
+                .mentor-card_rating__small svg {
+                    width: 4vw;
+                }
+                .mentor-card_achievedStar__small svg {
+                    fill: #ffdc64;
+                }
+                .mentor-card_linkShare__small {
+                    width: 90vw;
+                    position: static;
+                    margin: 5vw 0;
+                    color: #fff;
+                    background-color: hsla(0, 0%, 100%, .06);
+                    display: flex;
+                    justify-content: space-between;
+                    border-radius: 10px;
+                    padding: 5px 20px;
+                    border: 1px solid hsla(0, 0%, 100%, .06);
+                    bottom: .5vw;
+                }
+                .mentor-card_linkShare__small p {
+                    font-size: 4vw;
+                    font-family: sans-serif;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    color: #fff;
+                }
+                .mentor-card_linkShare__small div {
+                    width: 21vw;
+                    border-left: none;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: auto 0;
+                    padding-left: 2vw;
+                }
+                .mentor-card_linkShare__small div div {
+                    width: auto;
+                    display: flex;
+                    justify-content: center;
+                }
+                .mentor-card_linkShare__small div div span {
+                    margin: auto 0;
+                }
+                .mentor-card_linkShare__small div div span svg {
+                    height: 5.5vw;
+                    fill: #fff;
+                    opacity: .6;
+                }
+                .mentor-card_description {
+                    display: none;
+                }
+                .mentor-card_linkShare__2qyE1 {
+                    display: none;
+                }
+                .mentor-card_credentials__3-WXV {
+                    display: none;
+                }
+                .mentor-card_description__small {
+                    display: table;
+                    margin-top: 8vw;
+                    padding: 8vw 0 0 6vw;
+                    width: 100vw;
+                    line-height: 1.5;
+                    border-top: 1px solid rgba(240, 234, 255, .1);
+                    align-items: center;
+                    color: white;
+                }
+                .mentor-card_description__small h4 {
+                    margin: 2vw 0 .5vw;
+                    padding-left: 0;
+                    padding-right: 170px;
+                    font-size: 5vw;
+                    color: #fff;
+                }
+                .mentor-card_description__small p {
+                    width: 84vw;
+                    color: #9e91c1;
+                    text-align: left;
+                    font-size: 3.5vw;
+                    margin-top: 0!important;
+                    font-family: sans-serif;
+                }
+                .mentor-card_info {
+                    display: none;
+                }
+                .order-confirm-module_alertLightBox__1-qv0 {
+                    display: none;
+                }
+            }
